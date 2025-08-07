@@ -1,4 +1,6 @@
+import { images } from "@/constants/images";
 import { Tabs } from "expo-router";
+import { Image, ImageBackground } from "react-native";
 
 const _Layout = () => {
     return (
@@ -8,6 +10,15 @@ const _Layout = () => {
             options ={{
                 title : "Home",
                 headerShown :false,
+                tabBarIcon : ({focused}) =>(
+                    <>
+                    <ImageBackground
+                        source = {images.highlight}
+                        className ="flex flex-row w-full flex-1 min-w-[112px]">
+                        <Image source={require("@/assets/icons/home.png")}  tintColor ="#151312"  className = "size-5" />
+                    </ImageBackground>  
+                    </>
+                )
             }}
             />
 
