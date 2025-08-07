@@ -11,6 +11,21 @@ const _Layout = () => {
             }}
             />
 
+            <Tabs.Screen 
+            name = "search"
+            options ={{
+                title : "Search-movies",
+                headerShown : false,
+            }}
+            />
+
+            <Tabs.Screen
+            name = "bookmarking"
+            options = {{
+                title :"saved-movies",
+                headerShown : false
+            }}
+            />
         </Tabs>
     )
 }
