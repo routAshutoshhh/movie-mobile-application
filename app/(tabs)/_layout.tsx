@@ -26,6 +26,16 @@ const _Layout = () => {
                 headerShown : false
             }}
             />
+
+            <Tabs.Screen
+            name = "profile"
+            options ={{
+                title : "account",
+                headerShown : false
+            }}
+            />
+
+
         </Tabs>
     )
 }

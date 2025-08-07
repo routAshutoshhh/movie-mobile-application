@@ -13,7 +13,7 @@ export default function RootLayout() {
     <Stack.Screen
     name = "movie/[id]"
     options = {{
-        headerShown : false , 
+        headerShown : false, 
     }}
     />
     </Stack>
